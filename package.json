@@ -1,0 +1,12 @@
+{
+  "name": "eslint-plugin-sequelize",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0"
+  }
+}
