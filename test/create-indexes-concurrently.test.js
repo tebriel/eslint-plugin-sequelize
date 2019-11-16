@@ -10,6 +10,11 @@ ruleTester.run("create-indexes-concurrently", rule, {
         {
             code: "queryInterface.addIndex('I', { concurrently: true })",
             options: []
+        },
+        {
+            // Catch issue where node.callee.property doesn't exist
+            code: "cache = require('../cache');",
+            options: []
         }
     ],
 
